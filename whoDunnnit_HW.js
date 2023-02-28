@@ -1,7 +1,7 @@
 // // Episode 1 
 
 
-//const scenario = {
+// const scenario = {
 //     murderer: 'Miss Scarlet',
 //     room: 'Library',
 //     weapon: 'Rope'
@@ -143,38 +143,38 @@
 
 
 
-// //Episode 7 
+//Episode 7 
 
-// let murderer = 'Professor Plum';    //declare variable 'murderer' -  changeable since this is 'let' rather than 'const'
+let murderer = 'Professor Plum';    //declare variable 'murderer' -  changeable since this is 'let' rather than 'const'
 
-// const changeMurderer = function() {  //create function changeMurderer, murderer is now Mr Green - const variable. 
-//   murderer = 'Mr. Green';
+const changeMurderer = function() {  //create function changeMurderer, murderer is now Mr Green - const variable. 
+  murderer = 'Mr. Green';
 
-//   const plotTwist = function() {
-//     let murderer = 'Colonel Mustard';
+  const plotTwist = function() {
+    let murderer = 'Colonel Mustard';
 
-//     const unexpectedOutcome = function() {
-//       murderer = 'Miss Scarlet';
-//     }
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
 
-//     unexpectedOutcome();
-//   }
+    unexpectedOutcome();
+  }
 
-//   plotTwist();
-// }
+  plotTwist();
+}
 
-// const declareMurderer = function() {
-//   return `The murderer is ${murderer}.`; //murderer here currently Professor Plum
-// }
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`; //murderer here currently Professor Plum
+}
 
-// //console.log(declareMurderer()); output: murderer is Proffessor Plum 
+//console.log(declareMurderer()); output: murderer is Proffessor Plum 
 
-// changeMurderer();                 //let murderer = professor plum now updated to const murderer Mr Green - can't now be changed. 
-// const verdict = declareMurderer();
-// console.log(verdict);
+changeMurderer();                 //let murderer = professor plum now updated to const murderer Mr Green. Colonel Mustard/Miss Scarlet are 'let' - block scoped, doesn't exist outside the block. 
+const verdict = declareMurderer();
+console.log(verdict);
 
-// //Output: 
-// //The murderer is Mr. Green
+//Output: 
+//The murderer is Mr. Green
 
 
 // // Episode 8
